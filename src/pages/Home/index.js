@@ -3,8 +3,11 @@ import React from 'react'
 
 import {MaterialIcons} from "@expo/vector-icons"
 import Shoes from '../../components/Shoes'
+import { useNavigation } from "@react-navigation/native"
 
 const Home = () => {
+  const navigation = useNavigation()
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -31,7 +34,42 @@ const Home = () => {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         <View style={{flexDirection: "row", justifyContent: "space-around"}}>
-          <Shoes/>
+          <Shoes
+            img={require("../../assets/1.png")}
+            cost="R$ 140,00"
+            onClick={() => navigation.navigate("Detail")}
+          >Nike Air Max Dia</Shoes>
+          <Shoes
+            img={require("../../assets/2.png")}
+            cost="R$ 247,99"
+            onClick={() => navigation.navigate("Detail")}
+          >Nike Dramifter 10</Shoes>
+        </View>
+
+        <View style={{flexDirection: "row", justifyContent: "space-around"}}>
+          <Shoes
+            img={require("../../assets/3.png")}
+            cost="R$ 95,99"
+            onClick={() => alert("clicou")}
+          >Nike Squidward Tentacles</Shoes>
+          <Shoes
+            img={require("../../assets/4.png")}
+            cost="R$ 320,99"
+            onClick={() => alert("clicou")}
+          >Nike Epic React Flyknit 2</Shoes>
+        </View>
+
+        <View style={{flexDirection: "row", justifyContent: "space-around"}}>
+          <Shoes
+            img={require("../../assets/5.png")}
+            cost="R$ 147,99"
+            onClick={() => alert("clicou")}
+          >Nike Joride Run Flyinit</Shoes>
+          <Shoes
+            img={require("../../assets/6.png")}
+            cost="R$ 210,99"
+            onClick={() => alert("clicou")}
+          >Nike Air Dia</Shoes>
         </View>
       </ScrollView>
     </View>
