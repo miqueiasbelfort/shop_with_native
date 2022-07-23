@@ -22,10 +22,10 @@ const Detail = ({navigation}) => {
       <View>
 
         <View>
-          <Text style={[styles.title, {fontSize: 24}]}>R$ 289,99</Text>
+          <Text style={[styles.title, {fontSize: 24}]}>R$ 247,99</Text>
         </View>
         <View opacity={0.4}>
-          <Text style={[styles.title, {fontSize: 30}]}>Nike Air Max</Text>
+          <Text style={[styles.title, {fontSize: 30}]}>Nike Downshifter 10</Text>
         </View>
 
         <View style={styles.dotContainer}>
@@ -46,7 +46,7 @@ const Detail = ({navigation}) => {
 
         <View style={styles.textContent}>
           <Text style={styles.textTitle}>
-            Nike Air Max
+            Nike Downshifter 10
           </Text>
           <Text style={styles.textContent}>
             Inspired by the open architecture of Paris’s Centre Pompidou, Nike Designer Tinker Hatfield cut a small window into the Air Max 1’s midsole, making Nike Air visible for the first time

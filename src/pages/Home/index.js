@@ -43,7 +43,7 @@ const Home = () => {
             img={require("../../assets/2.png")}
             cost="R$ 247,99"
             onClick={() => navigation.navigate("Detail")}
-          >Nike Dramifter 10</Shoes>
+          >Nike Downshifter 10</Shoes>
         </View>
 
         <View style={{flexDirection: "row", justifyContent: "space-around"}}>
@@ -51,7 +51,7 @@ const Home = () => {
             img={require("../../assets/3.png")}
             cost="R$ 95,99"
             onClick={() => alert("clicou")}
-          >Nike Squidward Tentacles</Shoes>
+          >Adidas Squidward Tentacles</Shoes>
           <Shoes
             img={require("../../assets/4.png")}
             cost="R$ 320,99"
